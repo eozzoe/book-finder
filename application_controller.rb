@@ -7,43 +7,43 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  get 'adventure' do
+  get '/adventure' do
     erb :adventure
   end
   
-  get 'classics' do
+  get '/classics' do
     erb :classics
   end
   
-  get 'dystopian' do
+  get '/dystopian' do
     erb :dystopian
   end
   
-  get 'fantasy' do
+  get '/fantasy' do
     erb :fantasy
   end
   
-  get 'historical' do
+  get '/historical' do
     erb :historical
   end
   
-  get 'index' do
+  get '/index' do
     erb :index
   end
   
-  get 'memoir' do
+  get '/memoir' do
     erb :memoir
   end
   
-  get 'mystery' do
+  get '/mystery' do
     erb :mystery
   end
   
-  get 'realistic' do
+  get '/realistic' do
     erb :realistic
   end
   
-  get 'scifi' do
+  get '/scifi' do
     erb :scifi
   end
 
