@@ -49,7 +49,8 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/results' do
-    params.inspect #calculate_genre(params)
+    @winner = calculate_genre(params)
+    erb :results
   end
 
 end
