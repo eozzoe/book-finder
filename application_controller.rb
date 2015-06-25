@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require_relative 'models/model.rb'
 
 class ApplicationController < Sinatra::Base
 
@@ -15,8 +16,8 @@ class ApplicationController < Sinatra::Base
     erb :classics
   end
   
-  get '/dystopian' do
-    erb :dystopian
+  get '/dystopianscifi' do
+    erb :dystopianscifi
   end
   
   get '/fantasy' do
@@ -43,8 +44,12 @@ class ApplicationController < Sinatra::Base
     erb :realistic
   end
   
-  get '/scifi' do
-    erb :scifi
+  get '/quiz' do
+    erb :quiz
+  end
+  
+  post '/results' do
+    params.inspect #calculate_genre(params)
   end
 
 end
